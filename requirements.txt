@@ -1,3 +1,6 @@
 mysql-connector-python
 mkdocs
 mkdocs-macros-plugin
+mkdocs-material
+mkdocs-macros-plugin
+mysql-connector-python
