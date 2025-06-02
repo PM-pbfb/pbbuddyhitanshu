@@ -22,7 +22,7 @@
     
     
       
-        <title>Lead Management & Communication SOP 🚀 - SOP for SME</title>
+        <title>[Protected] Lead Management & Communication SOP 🚀 - SOP for SME</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lead Management &amp; Communication SOP 🚀
+              [Protected] Lead Management &amp; Communication SOP 🚀
             
           </span>
         </div>
@@ -237,7 +237,7 @@
   
   
   <span class="md-ellipsis">
-    👋 Welcome to PBbuddy!
+    [Protected] 👋 Welcome to PBbuddy!
     
   </span>
   
@@ -259,7 +259,7 @@
   
   
   <span class="md-ellipsis">
-    PRB Rejected - Callback Schedule Flow
+    [Protected] PRB Rejected - Callback Schedule Flow
     
   </span>
   
@@ -330,7 +330,7 @@
   
   
   <span class="md-ellipsis">
-    Lead Management &amp; Communication SOP 🚀
+    [Protected] Lead Management &amp; Communication SOP 🚀
     
   </span>
   
@@ -343,7 +343,7 @@
   
   
   <span class="md-ellipsis">
-    Lead Management &amp; Communication SOP 🚀
+    [Protected] Lead Management &amp; Communication SOP 🚀
     
   </span>
   
@@ -1363,480 +1363,33 @@
 
 
 
-<h1 id="lead-management-communication-sop">Lead Management &amp; Communication SOP 🚀</h1>
-<p>This document details the strategies and processes for <strong>lead allocation</strong>, <strong>dialing</strong>, <strong>inbound call handling</strong>, <strong>lead creation</strong>, and various <strong>communication channels</strong> across different product lines.</p>
-<hr />
-<h2 id="1-lead-allocation">1. Lead Allocation 🤝</h2>
-<h3 id="core-leads">Core Leads</h3>
-<ul>
-<li><strong>Below 50 Lives</strong>: Assigned to the <strong>High APE Team</strong>.</li>
-<li><strong>200 &amp; Above 200 Lives</strong>: Assigned to the <strong>Online Hybrid Team</strong>.</li>
-<li><strong>Note</strong>: All leads from the core channel with <strong>0</strong> lives are now also assigned to the <strong>High APE Team</strong>.</li>
-</ul>
-<h3 id="non-core-leads">Non-Core Leads</h3>
-<ul>
-<li>All non-core leads are assigned to the <strong>High APE Team</strong>.</li>
-</ul>
-<h3 id="mobile-app-allocation">Mobile App Allocation 📱</h3>
-<ul>
-<li>If the customer selects "<strong>Company</strong>" as input, the lead is assigned to the <strong>High APE Team</strong>.</li>
-<li>If the customer selects "<strong>Individual</strong>", the lead is assigned to the <strong>SME HOC Team</strong>.</li>
-</ul>
-<h3 id="winback-allocation">Winback Allocation 🔄</h3>
-<ul>
-<li><strong>Strategy</strong>: Leads are generally assigned to the agents who previously worked on those cases.</li>
-<li><strong>Winback Types</strong>:<ul>
-<li><strong>LYLR</strong> (Last Year Lapsed Renewal)</li>
-<li><strong>LYLIR</strong> (Last Year Lapsed Intermediate Renewal)</li>
-<li><strong>LYLCR</strong> (Last Year Lapsed Canceled Renewal)</li>
-</ul>
-</li>
-<li><strong>LYLR Specifics</strong>: Most <strong>LYLR</strong> allocations are now directed to fresh agents. However, a few leads are still assigned to renewal agents if they were the last agents to work on those cases prior to this allocation.</li>
-</ul>
-<hr />
-<h2 id="2-assignment-tat">2. Assignment TAT ⏱️</h2>
-<ul>
-<li>Leads are assigned within <strong>5</strong> minutes of their creation.</li>
-</ul>
-<hr />
-<h2 id="3-dialing-logics">3. Dialing Logics 📞</h2>
-<h3 id="generic">Generic</h3>
-<ul>
-<li><strong>Working Hours</strong>: <strong>09:00</strong> to <strong>18:00</strong> (Last lead assignment time: <strong>17:30</strong>)</li>
-<li><strong>Non-Working Hours</strong>: <strong>18:01</strong> to <strong>08:59</strong></li>
-<li><strong>Lead Age</strong>: If a lead has a status of "<strong>New</strong>" or "<strong>Valid</strong>" and no contact has been made within the next <strong>7</strong> days, the system will automatically mark the lead as "<strong>Rejected</strong>."</li>
-<li><strong>Future Prospect</strong>:<ul>
-<li>If the talk time on a particular lead is <strong>10</strong> minutes, the agent cannot mark the lead as a "<strong>Future Prospect</strong>."</li>
-<li>If a lead in Sub-product A is rejected as a "<strong>Future Prospect</strong>" and the user (at the customer ID level) purchases any sub-product across SME before the specified date, no lead will be created on that specific date.</li>
-<li>The minimum start date for a "<strong>Future Prospect</strong>" is D+<strong>30</strong> days.</li>
-</ul>
-</li>
-</ul>
-<h3 id="winback-logic">Winback Logic 🔙</h3>
-<ul>
-<li><strong>WC Expired Leads</strong>: Created before <strong>90</strong> days of policy expiry.</li>
-<li><strong>PI Last Year Lost Cases/Renewal</strong>: Created before <strong>60</strong> days of policy expiry.</li>
-<li><strong>Marine Winback</strong>: For last year's lost renewals.</li>
-<li><strong>Liability Winback</strong>: For last year's lost renewals.</li>
-</ul>
-<h3 id="lead-call-status">Lead (Call) Status 📊</h3>
-<p>These statuses are system-assigned, but the agent can change the status from the UI. Additionally, if the status is changed from "<strong>Valid</strong>" to "<strong>Interested</strong>," it cannot be reverted to "<strong>Valid</strong>" by either the user or the system.</p>
-<ul>
-<li><strong>New</strong>: A new lead in the system. If a user creates a new child ID while having an existing parent lead with a status other than "<strong>New</strong>," the child ID will be marked as "<strong>New</strong>," but the call will always be initiated on the parent ID. After booking, the status of the call will be marked as "<strong>Parent/Child Booked</strong>."</li>
-<li><strong>Valid</strong>: The customer didn’t pick up the call (i.e., there is a ring time available), or the number was switched off, or the call duration was less than <strong>10</strong> seconds.</li>
-<li><strong>Interested</strong>: Call duration is <strong>15</strong> seconds or more.</li>
-<li><strong>Contacted</strong>: Call duration is between <strong>11</strong> seconds and <strong>14</strong> minutes.</li>
-</ul>
-<h3 id="call-transfer-flow">Call Transfer Flow ➡️</h3>
-<ul>
-<li>Click on the transfer icon. After that, we will ask for the transfer type and sub-product type, and then the panel will be displayed. However, the panel should patch to the first available agent rather than the previous one.</li>
-</ul>
-<h3 id="lead-treatment">Lead Treatment 🔄</h3>
-<ul>
-<li>First, reject the initial lead with the disposition "<strong>Interested in Other LOB</strong>" and create a new lead with the lead source from the initial lead.</li>
-<li><strong>Assignment</strong>: The new lead should be assigned to the first available agent, with selection available accordingly.</li>
-</ul>
-<hr />
-<h2 id="4-dialer-logics">4. Dialer Logics 🤖</h2>
-<h3 id="dialer-priority">Dialer Priority ⬆️</h3>
-<ul>
-<li>Dialer with explanation.</li>
-</ul>
-<h3 id="rejection-logic">Rejection Logic ❌</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Subproduct ID</th>
-<th style="text-align: left;">Subproduct Name</th>
-<th style="text-align: left;">New / Valid</th>
-<th style="text-align: left;">Contacted</th>
-<th style="text-align: left;">Interested</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>M001</strong></td>
-<td style="text-align: left;">Marine Insurance</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">After <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>WC001</strong></td>
-<td style="text-align: left;">Workmen compensation</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">After <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>FB001</strong></td>
-<td style="text-align: left;">Fire and Burglary</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>SO001</strong></td>
-<td style="text-align: left;">Shop owner Insurance</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>OP001</strong></td>
-<td style="text-align: left;">Office package Policy</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>CAR01</strong></td>
-<td style="text-align: left;">Construction all Risk</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>EAR01</strong></td>
-<td style="text-align: left;">Erection All risk</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>PM001</strong></td>
-<td style="text-align: left;">Plant and Machinery</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>GL001</strong></td>
-<td style="text-align: left;">General Liability</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>DO001</strong></td>
-<td style="text-align: left;">D&amp;O</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>EO001</strong></td>
-<td style="text-align: left;">E&amp;O</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>GHI01</strong></td>
-<td style="text-align: left;">GHI</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>GPA01</strong></td>
-<td style="text-align: left;">GPA</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>OPD360</strong></td>
-<td style="text-align: left;">OPD care 360</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>PI001</strong></td>
-<td style="text-align: left;">PI</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>PL001</strong></td>
-<td style="text-align: left;">Public Liability</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>CR001</strong></td>
-<td style="text-align: left;">Cyber Risk Insurance</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>PM002</strong></td>
-<td style="text-align: left;">Plant and Machinery</td>
-<td style="text-align: left;">At <strong>5</strong> attempts</td>
-<td style="text-align: left;">At <strong>3</strong> attempts</td>
-<td style="text-align: left;">At <strong>2</strong> attempts</td>
-</tr>
-</tbody>
-</table>
-<h3 id="export-to-sheets">Export to Sheets 📤</h3>
-<h3 id="new-lead-calling-flow">New Lead Calling Flow 🆕</h3>
-<ul>
-<li>All leads can get dialed max <strong>10</strong> times in a week.</li>
-</ul>
-<h3 id="calculation-of-active-days">Calculation of Active Days 🗓️</h3>
-<ul>
-<li><strong>Active Days Count</strong>: Only the days when the agent is actively working will be considered. If the agent is not active on a particular day (e.g., on leave or off), that day will not be counted in the scheduling logic.</li>
-</ul>
-<h3 id="call-schedule-for-unconnected-leads">Call Schedule for Unconnected Leads ⏳</h3>
-<p>If a lead has not been contacted yet, the following call schedule will be followed:</p>
-<ul>
-<li><strong>Day 1</strong>: <strong>4</strong> Calls: The lead should receive a total of 4 calls on the first day.<ul>
-<li><strong>2</strong> Calls in one shift (e.g., morning shift).</li>
-<li><strong>2</strong> Calls in another shift (e.g., evening shift).</li>
-</ul>
-</li>
-<li><strong>Day 2</strong>: <strong>2</strong> Calls: The lead should receive 2 calls, scheduled in shifts different from those on Day 1. For example, if calls on Day 1 were in the morning and evening, the calls on Day 2 might be scheduled in the afternoon and late evening.</li>
-<li><strong>Day 3</strong>: <strong>1</strong> Call: The lead should receive 1 call on this day.</li>
-<li><strong>Day 5</strong>: <strong>1</strong> Call: Another 1 call should be made on this day.</li>
-<li><strong>Day 7</strong>: <strong>1</strong> Call: The final call in this sequence should be made on this day.</li>
-</ul>
-<p><strong>Important Notes</strong>:</p>
-<ul>
-<li><strong>Application of Call Flow</strong>: This call schedule is applicable only if none of the calls have been connected with the lead. In other words, if the lead has not answered any of the calls or if the calls went unanswered.</li>
-<li><strong>Connected Calls</strong>: If a call is connected (i.e., the lead answers the call), the scheduling and prioritization of further calls will follow a different set of rules or logic, which should be specified in your system's guidelines.</li>
-</ul>
-<p>This flow ensures systematic and regular attempts to contact the lead, adjusting for agent availability and prioritizing connected calls based on established rules.</p>
-<h3 id="nullify-first-attempt">Nullify First Attempt 🚫</h3>
-<ul>
-<li><strong>Condition</strong>: The last attempt will be nullified if the customer revisits (via Revisit, Inbound, or Email) between the first and second attempt.</li>
-</ul>
-<h3 id="revisit-criteria">Revisit Criteria 🔙</h3>
-<ul>
-<li><strong>Time Difference</strong>: A revisit will only be considered if the time between the last visit and the current visit is greater than <strong>30</strong> minutes.</li>
-<li><strong>During Call</strong>: A revisit during a call will be considered a revisit.</li>
-<li><strong>Website Revisit</strong>: If the customer revisits the PB website within <strong>5</strong> minutes, it will be treated as if the revisit did not occur.</li>
-</ul>
-<h3 id="active-callback">Active Callback 🔄</h3>
-<ul>
-<li><strong>Time Frame</strong>: All scheduled callbacks within CB-<strong>15</strong> minutes to CB+<strong>15</strong> minutes fall under this category.</li>
-<li><strong>Sorting</strong>: Internal sorting will be based on the difference between the current time and the callback time. The nearest callbacks will have higher priority.</li>
-<li><strong>Handling</strong>: If not attempted, the lead will be moved to the ‘Passive Callback’ bucket.</li>
-</ul>
-<h3 id="scenarios">Scenarios 🧩</h3>
-<ul>
-<li><strong>Scenario 1a: Picked (1st Attempt)</strong><ul>
-<li><strong>Actions</strong>: The agent can either: Book the lead or set up a callback.</li>
-<li>If neither action is taken, the lead will move to the Rest/Answered Bucket.</li>
-</ul>
-</li>
-<li><strong>Scenario 1b: Not Attempted/Not Answered/Not Connected (1st Attempt)</strong><ul>
-<li><strong>Handling</strong>: The lead will be moved out of the queue for <strong>60</strong> minutes and will reappear after <strong>60</strong> minutes according to the prioritization logic.</li>
-</ul>
-</li>
-<li><strong>Scenario 1c: Picked (2nd Attempt) Where 1st Attempt Was Unanswered</strong><ul>
-<li><strong>Actions</strong>: The agent can either: Book the lead or set up a callback.</li>
-<li>If neither action is taken, the lead will move to the Rest/Answered Bucket.</li>
-</ul>
-</li>
-<li><strong>Scenario 1d: Not Attempted/Not Answered/Not Connected (2nd Attempt)</strong><ul>
-<li><strong>Handling</strong>: The lead will be moved to the Rest/Answered Bucket.</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h2 id="5-inbound-workflow">5. Inbound Workflow ☎️</h2>
-<h3 id="ivr-revamp-for-sme-hotline-1800-123-4567">IVR Revamp for SME Hotline: <strong>1800-123-4567</strong></h3>
-<h3 id="current-flow">Current Flow</h3>
-<ul>
-<li><strong>Main IVR</strong>:<ul>
-<li><strong>1</strong>: Group Health Insurance, Group Personal Accident Insurance, Group Term Life<ul>
-<li><strong>Sub-IVR</strong>: "For Group Health Insurance, press <strong>1</strong>. For Group Personal Accident Insurance, press <strong>2</strong>. For Group Term Life Insurance, press <strong>3</strong>."</li>
-</ul>
-</li>
-<li><strong>2</strong>: Workmen's Compensation<ul>
-<li><strong>Queue</strong>: <strong>WC_Queue</strong></li>
-<li><strong>Message</strong>: "For Workmen's Compensation Insurance, please press <strong>1</strong>."</li>
-</ul>
-</li>
-<li><strong>3</strong>: Fire Insurance<ul>
-<li><strong>Queue</strong>: <strong>Fire_Queue</strong></li>
-<li><strong>Message</strong>: "For Fire Insurance for your business, please press <strong>1</strong>."</li>
-</ul>
-</li>
-<li><strong>4</strong>: Marine Insurance<ul>
-<li><strong>Queue</strong>: <strong>Marine_Queue</strong></li>
-<li><strong>Message</strong>: "For Marine Insurance to secure your transit, please press <strong>1</strong>."</li>
-</ul>
-</li>
-<li><strong>5</strong>: Doctor's Indemnity<ul>
-<li><strong>Queue</strong>: <strong>DocIndem_Queue</strong></li>
-<li><strong>Message</strong>: "For Doctor's Indemnity Insurance, please press <strong>1</strong>."</li>
-</ul>
-</li>
-<li><strong>6</strong>: Liability Insurance<ul>
-<li><strong>Queue</strong>: <strong>Liability_Queue</strong></li>
-<li><strong>Message</strong>: "For any kind of business Liability Insurance, please press <strong>1</strong>."</li>
-<li><strong>Sub-IVR</strong>:<ul>
-<li>"For General Liability Insurance, press <strong>1</strong>."</li>
-<li>"For Directors &amp; Officers Insurance, press <strong>2</strong>."</li>
-<li>"For Cyber Risk Insurance, press <strong>3</strong>."</li>
-<li>"For any other professional indemnity (other than doctor), press <strong>4</strong>." (Will land in the indemnity queue.)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>7</strong>: Engineering Insurance<ul>
-<li><strong>Queue</strong>: <strong>Eng_Queue</strong></li>
-<li><strong>Message</strong>: "For Construction Insurance, please press <strong>1</strong>."</li>
-</ul>
-</li>
-<li><strong>8</strong>: Policy Renewal Related</li>
-<li><strong>9</strong>: If you have not received a policy copy or have service-related issues<ul>
-<li><strong>Queue</strong>: <strong>General_Queue</strong></li>
-<li><strong>Message</strong>: "For any other service-related inquiries or to receive a policy copy, please press <strong>1</strong>."</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="additional-information">Additional Information:</h3>
-<ul>
-<li><strong>Lead Creation</strong>: A lead will be created without a sub-product only when a call is received on the sales IVR.</li>
-<li><strong>Central IVR Flow</strong>: The central IVR will play the message and direct to the SME hotline for the same user experience.<ul>
-<li><strong>Message</strong>: “For any type of business insurance, please press <strong>5</strong>.”</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h2 id="6-lead-creation-logic">6. Lead Creation Logic ✨</h2>
-<h3 id="renewal-renewals">Renewal  renewals</h3>
-<ul>
-<li><strong>For CC</strong>: Before <strong>90</strong> days of the expiry date.</li>
-<li><strong>For FOS</strong>: Before <strong>60</strong> days of the expiry date.</li>
-</ul>
-<h3 id="winback">Winback</h3>
-<ul>
-<li><strong>Expired</strong>:<ul>
-<li>WC, CAR, EAR &amp; CPM: Before <strong>180</strong> days from the Date of Expiry (DOE).</li>
-<li>LYLR: Last year's lost renewal: <strong>30</strong> days before the expiry.</li>
-<li>LYLIR: Last year's lost interest rejected: <strong>45</strong> days before the expiry.</li>
-<li>LYLCR: Last year's lost contacted rejected: <strong>60</strong> days before the expiry.</li>
-</ul>
-</li>
-<li><strong>Core Rejected</strong>: <strong>90</strong> days after the rejection date.</li>
-<li><strong>Own Rejected Winback (WB)</strong>: <strong>120</strong> days after the rejection date.</li>
-</ul>
-<hr />
-<h2 id="7-calling-logics">7. Calling Logics 🗣️</h2>
-<h3 id="manual-attempts-rules">Manual Attempts Rules 📝</h3>
-<ul>
-<li>If historical talk time (TT) &lt; <strong>2</strong> min and same day TT = <strong>0</strong> and there are <strong>3</strong> unanswered attempts (UA), the advisor cannot release the call and dial manually.</li>
-<li>Maximum <strong>2</strong> manual attempts allowed in a day if same day talk time &lt; <strong>1</strong> minutes.</li>
-<li>Maximum <strong>5</strong> manual attempts allowed in a day if same day talk time &gt; <strong>1</strong> minutes.</li>
-<li>If total talk time on Leadid is less than <strong>1</strong> minute, manual attempts are not allowed and the system will dial according to its priority.</li>
-</ul>
-<h3 id="burst-calling-rule">Burst Calling Rule 📈</h3>
-<ul>
-<li>At customer level, if more than <strong>5</strong> unanswered attempts occur in <strong>10</strong> minutes, no calls are allowed to that customer for the next <strong>24</strong> hours.</li>
-<li>Exceptions include: Paymentcallback, Callback (set before Burst calling), CTC, IB and Revisit allowed.</li>
-<li>If same-day talk time &gt; <strong>5</strong> minutes, manual calls are allowed.</li>
-</ul>
-<h3 id="ai-calling-status-stamping">AI &lt;&gt; Calling - Status Stamping 🤖💬</h3>
-<ul>
-<li>In Brief: If we receive any negative sentiment from the customer (Cx), we apply a cool-off period of <strong>1</strong> day.</li>
-<li>On the second negative sentiment, the cool-off period extends to <strong>3</strong> days.</li>
-<li>On the third negative sentiment, the Cx is unsubscribed for <strong>7</strong> days.</li>
-<li>If, during this period, the Cx revisits our journey and opts to resubscribe, they will be subscribed again.</li>
-<li>If they do not take any action, they will be automatically resubscribed after <strong>30</strong> days.</li>
-<li>On rejection, we pass an identifier in the sub-status.</li>
-</ul>
-<h3 id="virtual-numbers">Virtual Numbers 🌐</h3>
-<ul>
-<li>After <strong>3</strong> attempts, the agent can dial using virtual numbers, which have strong connectivity.</li>
-<li>We have enabled approximately <strong>100</strong> virtual numbers across various Lines of Business (LoBs).</li>
-</ul>
-<hr />
-<h2 id="8-communication-process">8. Communication Process ✉️</h2>
-<h3 id="tracker">Tracker</h3>
-<ul>
-<li>Link: [Communication Tracker]</li>
-</ul>
-<h3 id="system-communication-channels">System Communication Channels 📲</h3>
-<ul>
-<li><strong>WhatsApp</strong><ul>
-<li><strong>Generic Communication</strong>: On lead rejection (manual or system-driven), a generic message is sent for all sub-products.</li>
-<li>If the customer (Cx) clicks the provided button, the system reopens the lead and assigns it to the last assigned agent.</li>
-<li><strong>Unanswered Attempts</strong>: For selected products like D&amp;O, PI, an Unanswered Attempts message is sent.</li>
-<li>For other products, this feature is in queue for implementation.</li>
-</ul>
-</li>
-<li><strong>PRB Communication (Potential Repeat Buyer - PRB SOP)</strong><ul>
-<li><strong>First Communication</strong>: Before scheduling a callback, the system provides an option to schedule calls earlier.</li>
-<li>This includes educational videos highlighting the risks of lack of insurance.</li>
-<li>This initiative is applied across all products, starting with PI.</li>
-<li>Video Link: <strong>https://example.com/prb_video</strong></li>
-</ul>
-</li>
-<li><strong>Email Communication</strong>: CJ has an email campaign plan, but there is no current drop campaign for emails.</li>
-</ul>
-<h3 id="manual-communication-channels">Manual Communication Channels ✍️</h3>
-<ul>
-<li><strong>WhatsApp</strong><ul>
-<li><strong>Advisor Channel</strong>: Advisors have access to free text messaging for communication.</li>
-<li>Currently live for WC and Marine products.</li>
-<li><strong>Main Channel</strong>: Only template-based communication is allowed.</li>
-<li>Live for all non-EB products, except Cyber Retail and Property products.</li>
-<li>Calendar blocking templates are enabled for these exceptions.</li>
-<li><strong>Sales journey includes</strong>:<ul>
-<li>Greeting</li>
-<li>Quote requirement questions</li>
-<li>Proposal form sharing</li>
-<li>Payment link sharing</li>
-<li>Thank-you message</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>Email Templates</strong><ul>
-<li><strong>Generic Templates</strong>:<ul>
-<li>CJ Link</li>
-<li>PB Meet Link</li>
-<li>Payment Link</li>
-<li>Blank Template</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>PB Meet</strong><ul>
-<li>PB Meet functionality is currently available for GHI.</li>
-<li>No non-EB product is using this feature yet.</li>
-<li>PB Meet is a recorded video call (VC) system.</li>
-<li>The agent can send a link and request the customer to connect over PB Meet.</li>
-</ul>
-</li>
-<li><strong>Matrix GoSME flow</strong></li>
-<li><strong>Field Advisor flow</strong></li>
-<li><strong>Outreach Process</strong><ul>
-<li>Calling of purchase database</li>
-<li><strong>Calling Mode</strong>: SIM panel calling</li>
-</ul>
-</li>
-<li><strong>HOC Process</strong><ul>
-<li>Implemented for Health, Motor, and Commercial products.</li>
-<li>For Term and Investment, it is currently in queue.</li>
-</ul>
-</li>
-</ul>
-<h3 id="lead-sourcing">Lead Sourcing 💡</h3>
-<ul>
-<li>Sales</li>
-<li>Service</li>
-<li>Employee Referrals</li>
-</ul>
+<div id="mkdocs-encrypted-content" style="display:none">hGw6qJngz7Y4jYj26R4+eg==;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</div>
+<div id="mkdocs-decrypted-content">
+    <form id="mkdocs-decrypt-form" class="md-content__inner md-typeset">
+        <h1>This content is protected with AES encryption. </h1>
+        <p>Contact your administrator for access to this page.</p>
+        <input class="md-input" type="password" id="mkdocs-content-password" placeholder="Password">
+        
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
+
+<script type="text/javascript">
+var encryptcontent_id = "encryptcontent_1";
+var encryptcontent_path = "EB_Logics/logics/";
+var decryption_failure_message = "Invalid password.";
+var encryptcontent_keystore = ["AkLR+hRCF/thyGsz7HVjFg==;mZmTIQ+9cmVr9oFhXfavanIO5W6pjqGWAvIXOCaOfh9DqXQR3gdbfIdcDYi//pwCp35a1yHT6RSljM8apmi/rgsMItNK9791y8L6nIFzxzoBTPvOs6TUhWtLz+wEvEmQ;AwubDCEWs0W2tplWCsg7lw=="];
+var encryptcontent_obfuscate = 0;
+
+</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/enc-base64.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/cipher-core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/sha256.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/hmac.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/pbkdf2.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/aes.js"></script>
+<script type="text/javascript" src="../../assets/javascripts/decrypt-contents.js" defer></script>
 
 
 

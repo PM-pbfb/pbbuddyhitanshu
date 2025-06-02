@@ -22,7 +22,7 @@
     
     
       
-        <title>PRB Rejected - Callback Schedule Flow - SOP for SME</title>
+        <title>[Protected] PRB Rejected - Callback Schedule Flow - SOP for SME</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PRB Rejected - Callback Schedule Flow
+              [Protected] PRB Rejected - Callback Schedule Flow
             
           </span>
         </div>
@@ -237,7 +237,7 @@
   
   
   <span class="md-ellipsis">
-    👋 Welcome to PBbuddy!
+    [Protected] 👋 Welcome to PBbuddy!
     
   </span>
   
@@ -268,7 +268,7 @@
   
   
   <span class="md-ellipsis">
-    PRB Rejected - Callback Schedule Flow
+    [Protected] PRB Rejected - Callback Schedule Flow
     
   </span>
   
@@ -281,7 +281,7 @@
   
   
   <span class="md-ellipsis">
-    PRB Rejected - Callback Schedule Flow
+    [Protected] PRB Rejected - Callback Schedule Flow
     
   </span>
   
@@ -791,148 +791,33 @@
 
 
 
-<h1 id="prb-rejected-callback-schedule-flow">PRB Rejected - Callback Schedule Flow</h1>
-<h2 id="overview">🧾 Overview</h2>
-<p>This SOP defines the process for handling PRB-rejected leads, including identification, callback scheduling, lead assignment, and exclusions. It also incorporates guidelines for V2 enhancements and dynamic lead management.</p>
-<hr />
-<h2 id="customer-identification">👤 Customer Identification</h2>
-<ul>
-<li>From the go-live date <code>2025-04-01</code>, all customers marked as PRB will be tracked.</li>
-<li>Leads with the following exclusion criteria will <strong>not</strong> be considered:</li>
-<li>PRB Lead Source: <code>PRB</code></li>
-<li>PRB UTM Source: <code>PRB_Rejected</code></li>
-</ul>
-<hr />
-<h2 id="callback-process">📆 Callback Process</h2>
-<ul>
-<li>The job runs at <code>23:00</code> every night.</li>
-<li>Callback setting starts at <code>23:30</code>.</li>
-<li>Callbacks will be scheduled every <code>9</code> minutes for agents with multiple PRB callbacks.</li>
-</ul>
-<hr />
-<h2 id="exclusions">🚫 Exclusions</h2>
-<ul>
-<li>For leads dated between <code>1st</code> and <code>15th</code> of any month:</li>
-<li>Booked leads, callbacks, or those with ≥ <code>180</code> seconds talk time will be excluded from PRB creation.</li>
-</ul>
-<hr />
-<h2 id="rejected-lead-handling">❌ Rejected Lead Handling</h2>
-<ul>
-<li><strong>Unassigned:</strong> No action taken.</li>
-<li><strong>Assigned:</strong> Rejected lead is reassigned to the last assigned agent.</li>
-</ul>
-<hr />
-<h2 id="callback-on-parent-lead">🔁 Callback on Parent Lead</h2>
-<ul>
-<li>For active <strong>Marine</strong> leads of the client:</li>
-<li>Set callback on the open parent lead.</li>
-<li>No new leads created.</li>
-<li>Callback Message Display: <code>PRB Callback</code></li>
-</ul>
-<hr />
-<h2 id="dialer-prioritization">☎️ Dialer &amp; Prioritization</h2>
-<ul>
-<li>If a callback is <strong>not</strong> scheduled, it won't be prioritized in the dialer.</li>
-<li>Max <code>3</code> consecutive callbacks per lead.</li>
-</ul>
-<hr />
-<h2 id="lead-creation-rejection">🧾 Lead Creation &amp; Rejection</h2>
-<ul>
-<li>No new PRB lead creation if the source or UTM matches rejection criteria.</li>
-<li>Rejected leads will <strong>not</strong> be counted toward <code>1000</code>.</li>
-</ul>
-<hr />
-<h2 id="callback-schedule">⏰ Callback Schedule</h2>
-<ul>
-<li>Callback Time Window: <code>15:00 to 16:30</code></li>
-<li>Callback Frequency: Every <code>15</code> minutes</li>
-</ul>
-<hr />
-<h2 id="lead-assignment">👥 Lead Assignment</h2>
-<ul>
-<li>Leads assigned only to agents <strong>tagged with PRB</strong>.</li>
-<li>Agent selection based on:</li>
-<li>Agent with max bookings on the Customer ID.</li>
-<li>If no agents available: Assign to any agent with <code>6</code>+ months in Marine ST group.</li>
-</ul>
-<hr />
-<h2 id="dialing-rejection-logic">🛑 Dialing Rejection Logic</h2>
-<ul>
-<li>First day dial from system.</li>
-<li>Post-first-day, only manual dials allowed.</li>
-<li>System will not include in auto dialer priority.</li>
-</ul>
-<hr />
-<h2 id="cool-off-period">🌙 Cool-Off Period</h2>
-<ul>
-<li>Cool-off period: <code>15</code> days from last callback for the same lead.</li>
-</ul>
-<hr />
-<h2 id="open-questions">❓ Open Questions</h2>
-<ul>
-<li><strong>If callbacks exceed 6</strong> → What is the fallback process?</li>
-<li>
-<p>Action needed: Prevent further callbacks or reroute to a senior agent?</p>
-</li>
-<li>
-<p><strong>Job Rejection Logic for Callback Feature</strong>:</p>
-</li>
-<li>SOP pending to define actions when rejection logic is triggered due to thresholds.</li>
-</ul>
-<hr />
-<h1 id="prb-v2-enhancements">PRB V2 Enhancements</h1>
-<h2 id="insights">📊 Insights</h2>
-<ul>
-<li><strong>Rejected PRB Leads:</strong></li>
-<li>Low conversion rates → Recommend monthly outreach.</li>
-<li><strong>Booked PRB Leads:</strong></li>
-<li>High conversion → Continue prioritizing at scheduled CB time.</li>
-<li>Manual call option remains enabled for agents.</li>
-</ul>
-<hr />
-<h2 id="action-items">✅ Action Items</h2>
-<ul>
-<li><strong>Auto-Reopen Rejected PRB:</strong> Every <code>30</code> days.</li>
-<li><strong>Referral/Upsell PRB Tagging:</strong></li>
-<li>All non-AO customers with &gt; <code>3</code> policies tagged as PRB.</li>
-<li>
-<p>Reopened every 30 days.</p>
-</li>
-<li>
-<p><strong>Unmark as PRB Option:</strong></p>
-</li>
-<li>
-<p>Agents can unmark PRB via rejection disposition: <code>Unmark PRB</code></p>
-</li>
-<li>
-<p><strong>HH Occupancy Exclusion:</strong></p>
-</li>
-<li>
-<p>Prevent HH occupancy from being auto-tagged as PRB.</p>
-</li>
-<li>
-<p><strong>Call Audits:</strong></p>
-</li>
-<li>
-<p>Enable audit request process for PRB leads.</p>
-</li>
-<li>
-<p><strong>PRB Communication:</strong></p>
-</li>
-<li>WhatsApp comms monthly via <code>MatrixGo</code>.</li>
-<li>New messaging every time.</li>
-</ul>
-<hr />
-<h2 id="arpitas-observations">🧠 Arpita’s Observations</h2>
-<ul>
-<li>Customers with &gt; <code>3</code> policies (non-AO) tagged as PRB.</li>
-<li>No year-round comms once AO is bought.</li>
-<li>Monthly callback by system every <code>2</code> months.</li>
-<li>Use MatrixGo Virtual Number: <code>MatrixGo</code>.</li>
-<li>Agent assignment based on:</li>
-<li>Highest sales count.</li>
-<li>TL verification if needed.</li>
-</ul>
+<div id="mkdocs-encrypted-content" style="display:none">a3ClFJB1z42wGH3YU0WQTQ==;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</div>
+<div id="mkdocs-decrypted-content">
+    <form id="mkdocs-decrypt-form" class="md-content__inner md-typeset">
+        <h1>This content is protected with AES encryption. </h1>
+        <p>Contact your administrator for access to this page.</p>
+        <input class="md-input" type="password" id="mkdocs-content-password" placeholder="Password">
+        
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
+
+<script type="text/javascript">
+var encryptcontent_id = "encryptcontent_1";
+var encryptcontent_path = "PRB/";
+var decryption_failure_message = "Invalid password.";
+var encryptcontent_keystore = ["AkLR+hRCF/thyGsz7HVjFg==;mZmTIQ+9cmVr9oFhXfavanIO5W6pjqGWAvIXOCaOfh9DqXQR3gdbfIdcDYi//pwCp35a1yHT6RSljM8apmi/rgsMItNK9791y8L6nIFzxzoBTPvOs6TUhWtLz+wEvEmQ;AwubDCEWs0W2tplWCsg7lw=="];
+var encryptcontent_obfuscate = 0;
+
+</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/enc-base64.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/cipher-core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/sha256.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/hmac.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/pbkdf2.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/aes.js"></script>
+<script type="text/javascript" src="../assets/javascripts/decrypt-contents.js" defer></script>
 
 
 
